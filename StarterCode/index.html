@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+  		<title>Healthcare</title>
+  		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  		<link rel="stylesheet" href="style.css">
+  		<link rel="stylesheet" href="d3Style.css">
 
-<head>
-  <meta charset="UTF-8">
-  <title>D3Times</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/d3Style.css">
+	</head>
+	<body>
+		<div class="chart">
+			<div class="row">
+			  <div class="col-xs-12 col-md-12">
+				<h1 style="margin-left: 150px">D3Times</h1>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-xs-12  col-md-9">
+				<div id="chart">
+				<script src="https://d3js.org/d3.v5.min.js"></script>
+				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+				<script type="text/javascript" src="app.js"></script>
 
-</head>
+		<!-- We append our chart here. -->
+	</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12  col-md-9">
+  <div class="article">
+	<h2 style="margin-left: 150px">Correlations Discovered Between Health Risks and Age, Income</h2>
+	<p style="margin-left: 150px"> Though it is easy to imagine how health is tied to income for the very poor or the very rich, the relationship 
+		between income and health is a gradient: they are connected step-wise at every level of the economic ladder. Middle-class Americans are 
+		healthier than those living in or near poverty, but they are less healthy than the upper class. Even wealthy Americans are less healthy 
+		than those Americans with higher incomes.</p>
+		
+	<p style="margin-left: 150px"> From information based on 2014 American Community Survey (ACS) 1-year estimates, one meaningful relationship is  
+		the observation between the relatively high poverty rate of 17.2% in Texas and correspondingly high percentage of the population (24.9%) 
+		without healthcare coverage.  Inversely, Massachusetts reports a marginally low percentage of those categorized 
+		as living in poverty at 11.6% with an equally low percentage of those lacking healthcare coverage (4.6%.) </p>
 
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <h1>D3Times</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div id="scatter">
-          <!-- We append our chart here. -->
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div class="article">
-          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-        </div>
-      </div>
-    </div>
+	<p style="margin-left: 150px"> 
+		While not included in the analysis of this study, further findings indicate that income is a driving force behind the striking health disparities 
+		that many minorities experience. In fact, although blacks and Hispanics have higher rates of disease than non-Hispanic whites, these differences 
+		are “dwarfed by the disparities identified between high- and low-income populations within each racial/ ethnic group.”4 That is, higher-income blacks, 
+		Hispanics, and Native Americans have better health than members of their groups with less income, and this income gradient appears to be more strongly 
+		tied to health than their race or ethnicity.</p>
   </div>
+</div>
+</div>
+</div>
 
-  <!-- Footer-->
-  <div id="footer">
-    <p>The Coding Boot Camp&copy;2016</p>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
+<!-- Footer-->
+<div id="footer">
+<p style="margin-left: 150px">The Coding Boot Camp&copy;2016</p>
+</div>
 
-</body>
-
+  </body>
 </html>
