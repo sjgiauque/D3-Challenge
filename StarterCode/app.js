@@ -161,10 +161,10 @@ d3.csv("healthData.csv").then(function(healthData, err) {
     .classed("active", true)
     .text("In Poverty (%)");
 
-  var healthcareLabel = labelsGroup.append("text")
+  var ageLabel = labelsGroup.append("text")
     .attr("x", 0)
     .attr("y", 40)
-    .attr("value", "healthcare") // value to grab for event listener
+    .attr("value", "age") // value to grab for event listener
     .classed("inactive", true)
     .text("Age (Median)");
 
